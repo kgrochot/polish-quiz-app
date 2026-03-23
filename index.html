@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polnisch-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Startscreen -->
+        <div class="screen active" id="start-screen">
+            <h1>Polnisch lernen Quiz</h1>
+            <p>Teste dein Wissen auf Polnisch!</p>
+            <button id="start-btn">Quiz starten</button>
+        </div>
+
+        <!-- Quizscreen -->
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-header">
+                <h2 id="question-text">Frage</h2>
+                <div class="quiz-info">
+                    <p>
+                        Frage <span id="question-number">1</span> von <span id="total-questions">20</span>
+                    </p>
+                </div>
+                <div id="answers-container" class="answers-container"></div>
+                <div id="explanation" class="explanation"></div>
+                <button id="next-btn" class="next-btn" disabled>Weiter</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- Resultscreen -->
+        <div class="screen" id="result-screen">
+            <h1>Quiz beendet!</h1>
+            <p>Dein Score: <span id="final-score">0</span> / <span id="max-score">20</span></p>
+            <button id="restart-btn">Noch einmal</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

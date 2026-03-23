@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.screen {
+    display: none;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover:enabled {
+    background-color: #45a049;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+}
+
+.wrong {
+    background-color: #f44336 !important;
+}
+
+.explanation {
+    margin: 10px 0;
+    font-size: 14px;
+    min-height: 24px;
+}
+
+.next-btn {
+    background-color: #2196F3;
+}
+
+.next-btn:hover {
+    background-color: #0b7dda;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #2196F3;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
